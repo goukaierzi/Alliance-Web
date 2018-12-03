@@ -8,7 +8,7 @@
 <meta charset="utf-8">
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-3.3.7-dist/css/sbootstrap.min.css"/>
 		<link href="../css/smod1.css" rel="stylesheet" type="text/css">
 		<link href="../css/smod1_1.css" rel="stylesheet" type="text/css">
 		<link href="../css/smod2.css" rel="stylesheet" type="text/css">
