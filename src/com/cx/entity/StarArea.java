@@ -1,28 +1,31 @@
 package com.cx.entity;
+
+import java.util.List;
+
 /**
- * ÊµÌåÀàÓµÓĞ
- * ÊôĞÔ---²Î¿¼±íµÄÁĞ
- * ¿Õ²Î¹¹Ôì
- * getter/setter·½·¨
- * toString ·½·¨
- * 
- *
+ * å®ä½“ç±»ä¸­æ‹¥æœ‰
+ * 1. å±æ€§ - å‚è€ƒè¡¨çš„åˆ—
+ * 2. ç©ºå‚æ„é€ 
+ * 3. getter/setteræ–¹æ³•
+ * 4. toString æ–¹æ³•
  */
 public class StarArea {
-	//¶¨ÒåÒ»¸öÊôĞÔ
-	//ĞŞÊÎ·û Êı¾İÀàĞÍ ÊôĞÔÃû³Æ
-	//number£¨7£©-Integer»òÕßint
-	//number(7,2)-Double»òÕßdouble
+	//å®šä¹‰ä¸€ä¸ªå±æ€§
+	//ä¿®é¥°ç¬¦ æ•°æ®ç±»å‹ å±æ€§åç§°
+	//number(7)- Integeræˆ–è€…int
+	//number(7,2) - Doubleæˆ–è€…double
 	private Integer id;
 	
-	//varchar2(20) -String 
+	//varchar2(20) - String
 	private String areaName;
 	
-	//   alt+/
+	//ä¸€ä¸ªåŒºåŸŸæ‹¥æœ‰å¤šä¸ªæ˜æ˜Ÿ - ä¸è¦å‡ºç°åœ¨toStringæ–¹æ³•ä¸­
+	private List<Star> star;
+	
+	//alt + /
 	public StarArea() {
 		
 	}
-	//²Ëµ¥Source
 
 	public Integer getId() {
 		return id;
@@ -40,10 +43,16 @@ public class StarArea {
 		this.areaName = areaName;
 	}
 
+	public List<Star> getStar() {
+		return star;
+	}
+
+	public void setStar(List<Star> star) {
+		this.star = star;
+	}
+
 	@Override
 	public String toString() {
-		return "StarArea [id=" + id + ", areaName=" + areaName + ", getId()=" + getId() + ", getAreaName()="
-				+ getAreaName() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
-				+ super.toString() + "]";
+		return "StarArea [id=" + id + ", areaName=" + areaName + "]";
 	}
 }
