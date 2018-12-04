@@ -1,105 +1,102 @@
 package com.cx.entity;
 
-import java.sql.Date;
+import java.util.Date;
 
-/***
- * 
- * 	id number(7) primary key,
-  	name varchar2(20) not null,
-  	gender char(1) check(gender in('F','M')),
-  	head_img varchar£¨20£© not null,
-  	details varchar2(200),
-  	area_id number(7),
-  	constraint area_id_fk foreign key (area_id) reference tbl_star_area()
- *
- */
-public class Star {
-		private Integer id;
-		
-		private String name;
-		
-		private char gender;
-		//ÈÕÆÚdate-Date
-		private Date birthday;
-		 
-		private String headImg;
-		
-		private String details;
-		
-		//×¢Òâ  ±íÓë±íÖ®¼äµÄ¹ØÏµÊÇÍ¨¹ıÍâ¼üÀ´Î¬»¤µÄ
-		//Òò´Ë ĞèÒªÎ¬»¤
-		//ÊµÌå²»´æÔÚÍâ¼ü¸ÅÄî
-		//¶à¸öStar¶ÔÓ¦Ò»¸öStarArea
-		private StarArea starArea;
-		public Star() {
-			// TODO Auto-generated constructor stub
-		}
-		public Integer getId() {
-			return id;
-		}
-		public void setId(Integer id) {
-			this.id = id;
-		}
-		public String getName() {
-			return name;
-		}
-		public void setName(String name) {
-			this.name = name;
-		}
-		public char getGender() {
-			return gender;
-		}
-		public void setGender(char gender) {
-			this.gender = gender;
-		}
-		public Date getBirthday() {
-			return birthday;
-		}
-		public void setBirthday(Date birthday) {
-			this.birthday = birthday;
-		}
-		public String getHeadImg() {
-			return headImg;
-		}
-		public void setHeadImg(String headImg) {
-			this.headImg = headImg;
-		}
-		public String getDetails() {
-			return details;
-		}
-		public void setDetails(String details) {
-			this.details = details;
-		}
-		public StarArea getStarArea() {
-			return starArea;
-		}
-		public void setStarArea(StarArea starArea) {
-			this.starArea = starArea;
-		}
-		@Override
-		public String toString() {
-			return "Star [id=" + id + ", name=" + name + ", gender=" + gender + ", birthday=" + birthday + ", headImg="
-					+ headImg + ", details=" + details + ", getId()=" + getId() + ", getName()=" + getName()
-					+ ", getGender()=" + getGender() + ", getBirthday()=" + getBirthday() + ", getHeadImg()="
-					+ getHeadImg() + ", getDetails()=" + getDetails() + ", getStarArea()=" + getStarArea()
-					+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
-					+ "]";
-		}
-		
+/**
+ * å®ä½“ç±»
+ *  id number(7) primary key,
+	name varchar2(20) not null,
+	gender char(1) check(gender in('F','M')),
+	birthday date default sysdate,
+	head_img varchar(20) not null,
+	details varchar2(2000),
+	area_id number(7),
+*/
+//@SuppressWarnings("all")
+public class Star{
+	private Integer id;
+	private String name;
+	//char(1) - char
+	private char gender;
+	
+	//æ—¥æœŸç±»å‹ date - Date
+	private Date birthday;
+	
+	private String headImg;
+	
+	private String details;
+	
+	//æ³¨æ„:è¡¨ä¸è¡¨ä¹‹é—´çš„å…³ç³»æ˜¯é€šè¿‡å¤–é”®ç»´æŠ¤çš„
+	//å› æ­¤åœ¨é€šè¿‡è¡¨æ¥æ„å»ºå®ä½“çš„æ—¶å€™,éœ€è¦å…³æ³¨å…³ç³»çš„ç»´æŠ¤
+	//è€Œåœ¨å®ä½“ä¸­æ˜¯ä¸å­˜åœ¨è¿™ä¸ªå¤–é”®çš„æ¦‚å¿µçš„
+	//private Integer areaId;
+	
+	//å¤šä¸ªStarå¯¹åº”ä¸€ä¸ªStarArea;
+	private StarArea starArea;
+	
+	public Star() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public char getGender() {
+		return gender;
+	}
+
+	public void setGender(char gender) {
+		this.gender = gender;
+	}
+
+	public Date getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
+	}
+
+	public String getHeadImg() {
+		return headImg;
+	}
+
+	public void setHeadImg(String headImg) {
+		this.headImg = headImg;
+	}
+
+	public String getDetails() {
+		return details;
+	}
+
+	public void setDetails(String details) {
+		this.details = details;
+	}
+
+	public StarArea getStarArea() {
+		return starArea;
+	}
+
+	public void setStarArea(StarArea starArea) {
+		this.starArea = starArea;
+	}
+
+	@Override
+	public String toString() {
+		return "Star [id=" + id + ", name=" + name + ", gender=" + gender + ", birthday=" + birthday + ", headImg="
+				+ headImg + ", details=" + details + "]";
+	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
