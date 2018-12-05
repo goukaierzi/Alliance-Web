@@ -35,7 +35,7 @@ public class JdbcTemplate {
 	}
 
 	public static Object exetuteQuery(IPreparedStatementCallBack pscb,
-			IResultSetCallBack rscb) {
+		IResultSetCallBack rscb) {
 		Connection conn = null;
 		PreparedStatement pst = null;
 		ResultSet rs = null;
