@@ -6,9 +6,16 @@ create table orders;
 
 create table ORDERS
 (
-orders_id numeric(7) primary key not null,
-orders_rmb decimal(8) not null,
-game_id numeric(7) not null,
-player_id numeric(10) not null
+		order_id number(7),
+		order_rmb decimal(8) ,
+		h_name varchar2(10),
+		s_name varchar2(50),
+		p_name varchar2(50),
+		player_id number(10),
+		constraint orders_order_id_pk primary key(order_id),
+		constraint fk_orders foreign key(player_id) references player(player_id)
 );
 
+insert into orders values(1001,213,'¿­Òş',null,null,1001)
+insert into orders values(10012,213,'ÏîÓğ',null,null,1002)
+commit;
