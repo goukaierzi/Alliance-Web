@@ -9,9 +9,9 @@ import com.cx.entity.skin;
 
 public interface ISkinDao {
 	
-	void save(skin skin);
+	void delById(String s_name);
 	
 	void select(skin skin);
 	
-	List<skin> findAll(String skinName,java.math.BigDecimal price );
+	List<skin> findAll( );
 }

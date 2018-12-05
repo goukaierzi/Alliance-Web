@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 		<title>《王者联盟》网站</title>
 		<link href="../css/kmod1.css" rel="stylesheet" type="text/css">
-		<!-- <link href="../css/smod1_1.css" rel="stylesheet" type="text/css"> -->
+		
 		<link href="../css/smod2.css" rel="stylesheet" type="text/css">
 		<link href="../css/smod2_1.css" rel="stylesheet" type="text/css">
 		<link href="../css/smod3.css" rel="stylesheet" type="text/css">
@@ -76,19 +76,10 @@
 			</nav><br><br>
 			
 			<a href="#">
-				<li class="qq">我的主页</li>
+				<p class="qq">我的主页</p>
 			</a>
 			<a href="#">
 				<li class="qq">游戏信息</li>
-			</a>
-			<a href="#">
-				<li class="qq">英雄积分</li>
-			</a>
-			<a href="#">
-				<li class="qq">天梯积分</li>
-			</a>
-			<a href="#">
-				<li class="qq">社区任务中心</li>
 			</a>
 		</div>
 		
@@ -100,9 +91,9 @@
 			<div class="page-wrapper" style="margin-bottom: 150px;">
 				<div class="row">
 					<div class="column lg-6 lg-offset-6 xl-5 xl-offset-6">
-						<h2 class="intro-heading-gradient-blue">这个世界需要英雄</h2>
+						<h2 class="intro-heading-gradient-blue">这个世界需要王者</h2>
 						<p class="intro-text">是我</p>
-						<a class="button m-lg" href="https://www.battlenet.com.cn/shop/zh/product/game/overwatch" target="_blank">立即购买</a>
+						<a class="button m-lg" href="#" target="_blank">立即购买</a>
 					</div>
 				</div>
 			</div>

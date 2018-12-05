@@ -3,10 +3,12 @@ create table users;
 
 
 create table users
-(username char(10) not null,
-password char(30) not null,
-juris char(30)
+(
+		username varchar2(50) not null,
+		password varchar2(30) not null,
+		email varchar2(30)
 );
 
-
+insert into USERS VALUES('ÁõÊ®Èý',123456789,'152314564@qq.com');
+insert into USERS VALUES('³ÌËª',12345609,'152314554@qq.com');
 commit;
